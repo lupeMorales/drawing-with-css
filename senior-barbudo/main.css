@@ -1,0 +1,138 @@
+:root {
+  --skin: #f6c09c;
+  --background: #ed4042;
+  --red: #ed2860;
+  --dark-red: #680524;
+  --black: #00243a;
+  --white: #fff;
+  /*Te recomiendo ColorZilla y Font ninja son las extensiones que yo utilizo para obtener rápidamente los colores y tipografías cuando quiero crear un gráfico.  Te recomiendo ColorZilla y Font ninja son las extensiones que yo utilizo para obtener rápidamente los colores y tipografías cuando quiero crear un gráfico.*/
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background);
+  height: 100vh;
+}
+.face {
+  position: relative;
+  width: 100px;
+  height: 200px;
+  background-color: var(--skin);
+  border-radius: 50px;
+}
+.eye-left {
+  position: absolute;
+  top: 60px;
+  left: 25px;
+  width: 25px;
+  height: 18px;
+  background-color: var(--white);
+  border-radius: 0 0 25px 25px;
+}
+.pupil-left {
+  position: absolute;
+  top: calc(50% - 4px);
+  left: calc(50% - 2px);
+  width: 5px;
+  height: 5px;
+  background-color: var(--black);
+  border-radius: 50px;
+}
+.eye-right {
+  position: absolute;
+  top: 60px;
+  left: 50px;
+  width: 25px;
+  height: 18px;
+  background-color: var(--white);
+  border-radius: 0 0 25px 25px;
+}
+.pupil-right {
+  position: absolute;
+  top: calc(50% - 4px);
+  left: calc(50% - 2px);
+  width: 5px;
+  height: 5px;
+  background-color: var(--black);
+  border-radius: 50px;
+}
+.beard {
+  position: absolute;
+  top: calc(100% - 115px);
+  width: 100px;
+  height: 115px;
+  background-color: var(--black);
+  border-radius: 25px 25px 50px 50px;
+  z-index: 750;
+}
+.nose {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 15px);
+  width: 30px;
+  height: 30px;
+  background-color: var(--skin);
+  border-radius: 50px;
+  z-index: 990;
+}
+.mouth {
+  position: absolute;
+  top: 110px;
+  left: 25px;
+  width: 50px;
+  height: 25px;
+  background-color: var(--dark-red);
+  border-radius: 0 0 50px 50px;
+  overflow: hidden;
+  z-index: 800;
+}
+.teeth {
+  width: 40px;
+  height: 10px;
+  background-color: var(--white);
+  border-radius: 0 0 25px 0;
+}
+.tongue {
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  top: 15px;
+  left: 5px;
+  background-color: var(--red);
+  border-radius: 0 25px 0 90px;
+}
+.neck {
+  display: inline-block;
+  position: absolute;
+  width: 66px;
+  height: 40px;
+  top: calc(100% - 20px);
+  left: calc(50% - 32px);
+  background-color: #ca9a79bb;
+}
+.ear-left {
+  display: inline-block;
+  position: absolute;
+  width: 16px;
+  height: 25px;
+  top: calc(35%);
+  left: -16px;
+  background-color: #ca9a79bb;
+  border-radius: 50px 0 0 50px;
+}
+.ear-right {
+  display: inline-block;
+  position: absolute;
+  width: 16px;
+  height: 25px;
+  top: calc(35%);
+  left: 100px;
+  background-color: #ca9a79bb;
+  border-radius: 0 50px 50px 0;
+}

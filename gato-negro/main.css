@@ -1,0 +1,134 @@
+:root {
+  --background: #ffebbe;
+  --shadow: #ccbb94;
+  --pink: #f3aac5;
+  --eyes: #f9da75;
+  --main-black: #4d4c54;
+  --grey: #5b5964;
+  --dark-black: #47474f;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background);
+}
+.head {
+  position: relative;
+}
+.ear {
+  width: 0;
+  height: 0;
+  border-bottom: 10rem solid var(--main-black);
+  border-right: 10rem solid transparent;
+  position: absolute;
+  top: -60%;
+}
+.ear:before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 10rem solid var(--pink);
+  border-right: 3rem solid transparent;
+}
+.ear:nth-of-type(1) {
+  right: 0;
+  transform: rotateY(180deg);
+}
+
+.face {
+  position: relative;
+  width: 180px;
+  height: 110px;
+  background-color: var(--main-black);
+  border-radius: 25px;
+  z-index: 900;
+}
+
+.eye-left {
+  position: absolute;
+  top: calc(50% - 20px);
+  left: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--eyes);
+}
+.eye-left::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--main-black);
+}
+
+.eye-right {
+  position: absolute;
+  top: calc(50% - 20px);
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--eyes);
+}
+.eye-right::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--main-black);
+}
+.nose {
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: calc(50% - 2px);
+  bottom: 30px;
+  border-bottom: 20px solid var(--pink);
+  border-left: 20px solid transparent;
+  border-top: 20px solid transparent;
+  transform: rotate(45deg);
+}
+
+/*
+.eye-left {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: calc(50% - 20px);
+  left: 30px;
+  border-radius: 50px;
+  background-color: var(--eyes);
+  z-index: 999;
+}
+.eye-right {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: calc(50% - 20px);
+  right: 30px;
+  border-radius: 50px;
+  background-color: var(--eyes);
+  z-index: 999;
+}
+ */
