@@ -14,6 +14,7 @@ Drawing with CSS es el repositorio donde iré guardando mis avances. Por ahora t
   
 
 ![screenshot](./images/view.png)
+![gif](./images/ghost.gif)
 
 
 ## Recursos:
