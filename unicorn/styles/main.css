@@ -250,7 +250,7 @@
   width: 70px;
   height: 39vh;
   background-color: #c5d8a4;
-  border-radius: 30px 30px 0 0;
+  border-radius: 30px 3 0px 0 0;
   /*  position: absolute; */
   z-index: 900;
 }
