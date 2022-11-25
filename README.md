@@ -7,7 +7,7 @@ Primero que elegir una imagen y luego descomponerla en formas geométricas senci
 
 Si echas un vistazo en la red descubrirás la de cosas increíbles que se pueden dibujar con css. La recomendación es empezar con cositas sencillas. Pasito a paso se hace el camino.
 
-Drawing with CSS es el repositorio donde iré guardando mis avances. Por ahora tengo 3 archivos con imagenes sencillas pero irá creciendo a medida que yo también crezca como desarrolladora.:rocket:
+Drawing with CSS es el repositorio donde iré guardando mis avances. Por ahora son archivos con imagenes sencillas pero irá creciendo a medida que yo también crezca como desarrolladora.:rocket:
 
 ### Vista:
 
