@@ -19,7 +19,7 @@
   width: 100%;
   height: 100vh;
   display: flex;
-  justify-content: flex-start;
+  /*  justify-content: flex-start; */
   align-items: center;
   flex-direction: column;
   background-color: var(--background);
@@ -331,5 +331,84 @@
   }
   100% {
     transform: translateY(0px);
+  }
+}
+.grass {
+  width: 100vw;
+  height: 41vh;
+  background: linear-gradient(
+    180deg,
+    hsla(125, 32%, 77%, 1) 29%,
+    hsla(132, 42%, 31%, 1) 100%
+  );
+  position: absolute;
+  bottom: 0;
+}
+.cloud-1,
+.cloud-2,
+.cloud-3,
+.cloud-4,
+.cloud-5,
+.cloud-6 {
+  position: fixed;
+  left: -25em;
+}
+
+.cloud-1 {
+  animation: parallax 20s linear infinite reverse -15s;
+  top: 15%;
+}
+
+.cloud-2 {
+  animation: parallax 24s linear infinite reverse -16s;
+  bottom: 51%;
+}
+
+.cloud-3 {
+  animation: parallax 35s linear infinite reverse -10s;
+}
+
+.cloud-circle-1 {
+  background: #fff;
+  border-radius: 50%;
+  height: 6em;
+  width: 6em;
+}
+
+.cloud-circle-2 {
+  background: #fff;
+  border-radius: 50%;
+  height: 10em;
+  left: 3em;
+  position: absolute;
+  top: -5em;
+  width: 10em;
+}
+
+.cloud-circle-3 {
+  background: #fff;
+  border-radius: 50%;
+  height: 8em;
+  left: 10em;
+  position: absolute;
+  top: -2em;
+  width: 8em;
+}
+
+.cloud-circle-4 {
+  background: #fff;
+  height: 2em;
+  left: 3.4em;
+  position: absolute;
+  top: 4em;
+  width: 11em;
+}
+
+@keyframes parallax {
+  from {
+    transform: translateX(-1em);
+  }
+  to {
+    transform: translateX(2300px);
   }
 }
