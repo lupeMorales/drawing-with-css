@@ -12,7 +12,7 @@ Drawing with CSS es el repositorio donde iré guardando mis avances. Por ahora s
 ### Vista:
 
   
-
+![screenshot](./autumn-landscape/assets/Autmn-landscape-viewScreen.png)
 ![screenshot](./images/view.png)
 ![gif](./images/ghost.gif)
 
