@@ -33,17 +33,18 @@ Aquí os dejo recursos que para mi me han sido de ayuda, si te animás a dibujar
 
 </a>
 
-<a  href="<a  href="https://www.youtube.com/watch?v=Y0_FMCji3iE"  target="_blank">
 
-- Wenting Zhang - Make CSS your secret super drawing tool
+<a  href="https://medium.com/adalab/10-consejos-para-empezar-a-practicar-css-haciendo-arte-b7348057b2d4"  target="_blank">
 
-</a>"  target="_blank">
+ - 10 consejos para empezar a practicar CSS haciendo arte. </br>
 
- - 10 consejos para empezar a practicar CSS haciendo arte.
+</a>
+
+
 
  
 
-</a>
+
 </div>
 
 
