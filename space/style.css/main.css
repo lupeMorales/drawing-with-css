@@ -31,6 +31,7 @@
   background-color: var(--orange);
   border-radius: 50%;
   overflow: hidden;
+  z-index: 1;
 }
 .moon::after {
   content: "";
@@ -53,7 +54,7 @@
   border-radius: 80px;
   background-color: var(--orange);
   box-shadow: -1px -1px 7px 0px #e6821e inset;
-  z-index: 1;
+  z-index: 2;
 }
 .crater__large::after {
   content: "";
@@ -64,8 +65,8 @@
   height: 80px;
   border-radius: 80px;
   background-color: var(--orange);
-
-  z-index: 1;
+  box-shadow: -1px -1px 7px 0px #e6821e inset;
+  z-index: 2;
 }
 .crater__large::before {
   content: "";
@@ -76,8 +77,7 @@
   height: 60px;
   border-radius: 80px;
   background-color: var(--orange);
-  box-shadow: -1px -1px 7px 0px #e6821e inset;
-  z-index: 1;
+  z-index: 2;
 }
 
 .crater__medium {
@@ -88,8 +88,7 @@
   height: 90px;
   border-radius: 80px;
   background-color: var(--orange);
-  box-shadow: -1px -1px 7px 0px #e6821e inset;
-  z-index: 1;
+  z-index: 2;
 }
 .crater__medium::before {
   content: "";
@@ -101,7 +100,7 @@
   border-radius: 80px;
   background-color: var(--orange);
   box-shadow: -1px -1px 7px 0px #e6821e inset;
-  z-index: 1;
+  z-index: 2;
 }
 .crater__medium::after {
   content: "";
@@ -113,7 +112,7 @@
   border-radius: 80px;
   background-color: var(--orange);
   box-shadow: -1px -1px 7px 0px #e6821e inset;
-  z-index: 1;
+  z-index: 2;
 }
 
 .crater__small {
@@ -125,7 +124,7 @@
   border-radius: 80px;
   background-color: var(--orange);
   box-shadow: -1px -1px 7px 0px #e6821e inset;
-  z-index: 1;
+  z-index: 2;
 }
 .crater__small::before {
   content: "";
@@ -137,7 +136,7 @@
   border-radius: 80px;
   background-color: var(--orange);
   box-shadow: -1px -1px 7px 0px #e6821e inset;
-  z-index: 1;
+  z-index: 2;
 }
 .crater__small::after {
   content: "";
@@ -150,4 +149,51 @@
   background-color: var(--orange);
   box-shadow: -1px -1px 7px 0px #e6821e inset;
   z-index: 1;
+}
+
+/***** PLANETS ******/
+.planet {
+  position: absolute;
+  top: 280px;
+  left: 230px;
+  width: 120px;
+  height: 120px;
+  border: solid 12px #a1cc52;
+  border-radius: 100px;
+  background-color: #fafffd;
+  overflow: hidden;
+}
+.planet::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 5px;
+  width: 132px;
+  height: 132px;
+  border-radius: 80px;
+  background-color: #a1cc52;
+  overflow: hidden;
+}
+
+.planet-2 {
+  position: absolute;
+  bottom: 140px;
+  right: 120px;
+  width: 120px;
+  height: 120px;
+  border: solid 12px #92ecf0;
+  border-radius: 100px;
+  background-color: #fafffd;
+  overflow: hidden;
+}
+.planet-2::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  width: 132px;
+  height: 132px;
+  border-radius: 80px;
+  background-color: #92ecf0;
+  overflow: hidden;
 }
