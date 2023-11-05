@@ -12,7 +12,7 @@ Drawing with CSS es el repositorio donde iré guardando mis avances. Por ahora s
 ### Vista:
 
   
-![screenshot](./images/Autmn-landscape-viewScreen.png)
+<!-- ![screenshot](./images/Autmn-landscape-viewScreen.png) -->
 ![screenshot](./images/view.png)
 ![gif](./images/ghost.gif)
 
