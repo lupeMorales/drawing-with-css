@@ -158,7 +158,69 @@
   box-shadow: -1px -1px 7px 0px #e6821e inset;
   z-index: 1;
 }
-
+.moon-sm {
+  position: absolute;
+  top: -160px;
+  left: -400px;
+  width: 90px;
+  height: 90px;
+  border-radius: 100px;
+  background-color: var(--silver);
+  overflow: hidden;
+}
+.moon-sm::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  bottom: 50px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--gray);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.moon-sm::before {
+  content: "";
+  position: absolute;
+  left: 60px;
+  bottom: 20px;
+  width: 25px;
+  height: 25px;
+  background-color: var(--gray);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.crater {
+  position: absolute;
+  top: 15px;
+  left: 40px;
+  width: 18px;
+  height: 18px;
+  border-radius: 100px;
+  background-color: var(--gray);
+}
+.crater::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: -15px;
+  width: 15px;
+  height: 15px;
+  border-radius: 100px;
+  background-color: var(--orange);
+  z-index: 99;
+}
+.crater::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: -15px;
+  width: 15px;
+  height: 15px;
+  border-radius: 100px;
+  background-color: var(--orange);
+  z-index: 99;
+}
 /***** PLANETS ******/
 .planet {
   position: absolute;
@@ -207,51 +269,33 @@
 }
 
 /******  ROCKET *****/
-.flap-left {
-  position: absolute;
-  top: 80%;
-  left: -50px;
-  height: 60px;
-  width: 60px;
-  background-color: var(--lightgray);
-  border-radius: 50px 5px 0 100px;
+@keyframes fly {
+  0% {
+    transform: translate(100);
+  }
+
+  100% {
+    transform: translate(1150px, -1150px);
+  }
+  /*   0% {
+    transform: translateY(90px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(90px);
+  } */
 }
-.flap-left::after {
-  content: "";
-  position: absolute;
-  top: 69%;
-  left: 41px;
-  height: 70px;
-  width: 20px;
-  background-color: var(--background);
-  border-radius: 50px 5px 0 0;
-}
-.flap-right {
-  position: absolute;
-  top: 80%;
-  left: -50px;
-  height: 60px;
-  width: 60px;
-  background-color: var(--lightgray);
-  border-radius: 50px 5px 0 100px;
-  transform: scaleX(-1);
-}
-.flap-right::after {
-  content: "";
-  position: absolute;
-  top: 69%;
-  left: 41px;
-  height: 70px;
-  width: 20px;
-  background-color: var(--background);
-  border-radius: 50px 5px 0 0;
-}
+
 .rocket {
   position: absolute;
-  top: 360px;
-  right: 200px;
-  z-index: 1;
+  top: 680px;
+  right: 400px;
   transform: rotate(45deg);
+  z-index: 1;
+  animation: fly 5.4s ease-in-out infinite;
+
   .rocket-body {
     height: 170px;
     width: 80px;
@@ -278,4 +322,237 @@
     border-radius: 50px 50px 0 0;
     z-index: 5;
   }
+}
+.flap-left {
+  position: absolute;
+  top: 80%;
+  left: -50px;
+  height: 60px;
+  width: 60px;
+  background-color: var(--lightgray);
+  border-radius: 50px 5px 0 100px;
+}
+
+.flap-right {
+  position: absolute;
+  top: 80%;
+  left: 70px;
+  height: 60px;
+  width: 60px;
+  background-color: var(--lightgray);
+  border-radius: 50px 5px 0 100px;
+  transform: scaleX(-1);
+}
+.window {
+  position: absolute;
+  top: 50px;
+  right: 25px;
+  height: 30px;
+  width: 30px;
+  border-radius: 100px;
+  background: linear-gradient(
+    to right,
+    #133755 0%,
+    #133755 50%,
+    #091d23 50%,
+    #091d23 100%
+  );
+  border: solid 4px var(--lightgray);
+}
+.window::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  right: -5px;
+  height: 23px;
+  width: 23px;
+  border-radius: 100px;
+  background: linear-gradient(
+    to right,
+    #133755 0%,
+    #133755 50%,
+    #091d23 50%,
+    #091d23 100%
+  );
+  border: solid 4px var(--lightgray);
+}
+.fire {
+  position: absolute;
+  right: 20px;
+  width: 40px;
+  height: 45px;
+  background: linear-gradient(
+    to right,
+    var(--yellow) 0%,
+    var(--yellow) 50%,
+    #9e6d1d 50%,
+    #9e6d1d 100%
+  );
+  border-radius: 0 0 30px 30px;
+  z-index: 2;
+}
+
+.fire::after {
+  content: "";
+  position: absolute;
+  right: 7px;
+  width: 25px;
+  height: 30px;
+  background: linear-gradient(
+    to right,
+    var(--orange) 0%,
+    var(--orange) 50%,
+    var(--red) 50%,
+    var(--red) 100%
+  );
+  border-radius: 0 0 30px 30px;
+  z-index: 3;
+}
+
+/**** STAR *****/
+.star-container {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  top: 300px;
+  left: -10px;
+}
+.star {
+  margin: 50px 0;
+  position: absolute;
+  top: 30px;
+  left: -205px;
+  display: block;
+  color: red;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid red;
+  border-left: 100px solid transparent;
+  transform: rotate(35deg);
+  z-index: 1;
+}
+.star:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  border-bottom: 80px solid red;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  transform: rotate(-35deg);
+}
+.star:after {
+  content: "";
+  position: absolute;
+  display: block;
+  color: red;
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid red;
+  border-left: 100px solid transparent;
+  transform: rotate(-70deg);
+}
+
+.star-medium-container {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: -100px;
+  left: 380px;
+  background-color: #91ecf0;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: var(--background);
+  border-radius: 100%;
+  transform: translate(-50px, -50px);
+}
+.circle::after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 100px;
+  top: 50px;
+  right: -150px;
+  background-color: var(--background);
+  border-radius: 100%;
+  transform: translate(-50px, -50px);
+}
+.circle-2 {
+  width: 100px;
+  height: 100px;
+  background-color: var(--background);
+  border-radius: 100%;
+  transform: translate(-50px, -50px);
+}
+.circle-2::after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 100px;
+  top: 50px;
+  right: -150px;
+  background-color: var(--background);
+  border-radius: 100%;
+  transform: translate(-50px, -50px);
+}
+
+.star-medium-container-2 {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 180px;
+  left: 680px;
+  background-color: #91ecf0;
+}
+.star-medium-container-3 {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 530px;
+  left: -450px;
+  background-color: #91ecf0;
+}
+
+/**** SATELITE *****/
+
+@keyframes turn-to-the-moon {
+  from {
+    transform: rotate(0deg) translate(-300px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(-300px) rotate(-360deg);
+  }
+}
+
+.satelite {
+  display: inline-block;
+  position: absolute;
+  top: 440px;
+  left: 48%;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50px;
+  animation: turn-to-the-moon 5s infinite linear;
+  z-index: 1;
+}
+.satelite::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 20%;
+  top: 17%;
+  background-color: var(--yellow);
+  border-radius: 50px;
 }
