@@ -207,18 +207,18 @@
   width: 15px;
   height: 15px;
   border-radius: 100px;
-  background-color: var(--orange);
+  background-color: var(--gray);
   z-index: 99;
 }
 .crater::after {
   content: "";
   position: absolute;
-  top: 50px;
-  left: -15px;
+  top: 65px;
+  left: 5px;
   width: 15px;
   height: 15px;
   border-radius: 100px;
-  background-color: var(--orange);
+  background-color: var(--gray);
   z-index: 99;
 }
 /***** PLANETS ******/

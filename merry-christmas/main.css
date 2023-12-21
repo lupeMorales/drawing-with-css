@@ -1,0 +1,288 @@
+:root {
+  --light-green: #abd1c6;
+  --green: #078080;
+  --red: #e16162;
+  --white: #fff;
+}
+body {
+  background: black;
+  margin: 0;
+  height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+.block {
+  position: relative;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  height: 170px;
+}
+
+.rope-container {
+  text-align: center;
+}
+
+.rope {
+  display: inline-block;
+  border: 1px solid white;
+  border-color: transparent transparent white;
+  border-radius: 50%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.rope-one {
+  width: 350px;
+  height: 100px;
+}
+
+.rope-two {
+  width: 300px;
+  height: 100px;
+  margin-left: -54px;
+}
+
+.lights-container {
+  position: absolute;
+  width: 588px;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.light {
+  width: 20px;
+  height: 30px;
+  border-radius: 0 30px;
+  position: absolute;
+}
+
+.light:nth-child(2n) {
+  transform: rotate(30deg);
+  background: var(--red);
+  box-shadow: 0 0 15px var(--red), 0 0 15px var(--red);
+  opacity: 0.2;
+  /*  animation: even 1.5s ease-in-out infinite; */
+}
+
+#f {
+  animation: even 1.5s ease-in-out 10s;
+}
+#e {
+  animation: even 1.5s ease-in-out 11s;
+}
+#l {
+  animation: even 1.5s ease-in-out 12s;
+}
+#i {
+  animation: even 1.5s ease-in-out 13s;
+}
+#z {
+  animation: even 1.5s ease-in-out 14s;
+}
+
+#n {
+  animation: even 1.5s ease-in-out 15s;
+}
+#a {
+  animation: even 1.5s ease-in-out 16s;
+}
+#v {
+  animation: even 1.5s ease-in-out 17s;
+}
+#i-repeat {
+  top: 77px;
+  left: 16px;
+  animation: even 1.5s ease-in-out 18s;
+}
+#d {
+  animation: even 1.5s ease-in-out 19s;
+}
+#a-repeat {
+  top: 92px;
+  left: 60px;
+  animation: even 1.5s ease-in-out 20s;
+}
+#d-repeat {
+  top: 96px;
+  left: 270px;
+  animation: even 1.5s ease-in-out 21s;
+}
+
+@keyframes even {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.light:nth-child(2n + 1) {
+  background: var(--green);
+  box-shadow: 0 0 15px var(--green), 0 0 15px var(--green);
+  opacity: 0.2;
+  /*   animation: odd 1.5s ease-in-out infinite; */
+}
+
+@keyframes odd {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.light-one {
+  top: 92px;
+  left: 60px;
+}
+
+.light-two {
+  top: 104px;
+  left: 130px;
+}
+
+.light-three {
+  top: 102px;
+  left: 200px;
+}
+
+.light-four {
+  top: 96px;
+  left: 270px;
+}
+
+.light-five {
+  top: 78px;
+  left: 318px;
+}
+
+.light-six {
+  top: 102px;
+  left: 380px;
+}
+
+.light-seven {
+  top: 103px;
+  left: 460px;
+}
+
+.light-eight {
+  top: 98px;
+  left: 520px;
+}
+
+.light-nine {
+  top: 77px;
+  left: 16px;
+}
+
+.light-ten {
+  top: 102px;
+  left: 95px;
+}
+
+.light-eleven {
+  top: 102px;
+  left: 155px;
+}
+
+.light-twelve {
+  top: 100px;
+  left: 230px;
+}
+
+.light-thirteen {
+  top: 86px;
+  left: 300px;
+}
+
+.light-fourteen {
+  top: 102px;
+  left: 380px;
+}
+
+.light-fiveteen {
+  top: 102px;
+  left: 460px;
+}
+
+.light-sixteen {
+  top: 100px;
+  left: 510px;
+}
+
+.light-seventeen {
+  top: 78px;
+  left: 572px;
+}
+
+.light-eighteen {
+  top: 76px;
+  left: 16px;
+}
+
+.light-nineteen {
+  top: 97px;
+  left: 60px;
+}
+
+.light-twenty {
+  top: 100px;
+  left: 120px;
+}
+
+.light-twenty-one {
+  top: 104px;
+  left: 200px;
+}
+
+.light-twenty-two {
+  top: 95px;
+  left: 260px;
+}
+
+.light-twenty-three {
+  top: 94px;
+  left: 340px;
+}
+
+.light-twenty-four {
+  top: 100px;
+  left: 400px;
+}
+
+.light-twenty-five {
+  top: 102px;
+  left: 490px;
+}
+
+.light-twenty-six {
+  top: 91px;
+  left: 540px;
+}
+
+.letter-container {
+  text-align: center;
+  margin: 0;
+}
+
+.letter {
+  color: white;
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 64px;
+  margin: 0 12px;
+}
